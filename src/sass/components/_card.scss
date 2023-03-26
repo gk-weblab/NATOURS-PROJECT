@@ -177,9 +177,10 @@
 		font-size: 2rem;
 	}
 
-	@include respond(tab-por) {
+       	// @include respond(tab-por) {
 		// functionality
-
+		@media only screen and (max-width: 56.25em),
+		only screen and (hover: none) { 
 		height: auto;
 		filter: drop-shadow(0 1rem 2rem rgba($color-black, 0.3));
 		background-color: $color-white;
@@ -235,5 +236,5 @@
 			font-size: 2rem;
 			margin: 1rem auto;
 		}
-	}
+	} 
 }
