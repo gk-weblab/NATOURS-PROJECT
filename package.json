@@ -1,13 +1,14 @@
 {
-    "name": "project",
+    "name": "Natours",
     "version": "0.1.0",
     "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
     "main": "public/index.html",
-    "author": "5t3ph",
+    "author": "gk",
     "scripts": {
       "build:sass": "sass  --no-source-map src/sass:public/css",
       "copy:html": "copyfiles -u 1 ./src/*.html public",
       "copy:assets": "copyfiles -u 1 ./src/img/**/* public",
+      "copy:assets": "copyfiles -u 1 ./src/css/**/* public",
       "copy": "npm-run-all --parallel copy:*",
       "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
       "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
